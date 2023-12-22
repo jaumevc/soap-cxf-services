@@ -1,0 +1,1580 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+CryptoUtils (Apache CXF JavaDoc 3.0.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="CryptoUtils (Apache CXF JavaDoc 3.0.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/CryptoUtils.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/common/util/crypto/HmacUtils.html" title="class in org.apache.cxf.common.util.crypto"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/common/util/crypto/CryptoUtils.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="CryptoUtils.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.common.util.crypto</FONT>
+<BR>
+Class CryptoUtils</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.common.util.crypto.CryptoUtils</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public final class <B>CryptoUtils</B><DT>extends <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+Encryption helpers
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#createSecretKeySpec(byte[], java.lang.String)">createSecretKeySpec</A></B>(byte[]&nbsp;bytes,
+                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;algo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#createSecretKeySpec(java.lang.String, java.lang.String)">createSecretKeySpec</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedBytes,
+                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;algo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#decodeSecretKey(java.lang.String)">decodeSecretKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedSecretKey)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#decodeSecretKey(java.lang.String, java.lang.String)">decodeSecretKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedSecretKey,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;secretKeyAlgo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;byte[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#decodeSequence(java.lang.String)">decodeSequence</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedSequence)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;byte[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#decryptBytes(byte[], java.security.Key)">decryptBytes</A></B>(byte[]&nbsp;bytes,
+             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;byte[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#decryptBytes(byte[], java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties)">decryptBytes</A></B>(byte[]&nbsp;bytes,
+             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey,
+             <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;keyProps)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#decryptSecretKey(java.lang.String, java.security.PrivateKey)">decryptSecretKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedEncryptedSecretKey,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A>&nbsp;privateKey)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#decryptSecretKey(java.lang.String, java.lang.String, org.apache.cxf.common.util.crypto.KeyProperties, java.security.PrivateKey)">decryptSecretKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedEncryptedSecretKey,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;secretKeyAlgo,
+                 <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;props,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A>&nbsp;privateKey)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#decryptSecretKey(java.lang.String, java.lang.String, java.security.PrivateKey)">decryptSecretKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedEncryptedSecretKey,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;secretKeyAlgo,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A>&nbsp;privateKey)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#decryptSequence(java.lang.String, java.security.Key)">decryptSequence</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedData,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#decryptSequence(java.lang.String, java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties)">decryptSequence</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedData,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey,
+                <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;props)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#decryptSequence(java.lang.String, java.lang.String)">decryptSequence</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedToken,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedSecretKey)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#decryptSequence(java.lang.String, java.lang.String, org.apache.cxf.common.util.crypto.KeyProperties)">decryptSequence</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedData,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedSecretKey,
+                <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;props)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#encodeBytes(byte[])">encodeBytes</A></B>(byte[]&nbsp;bytes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#encodeSecretKey(javax.crypto.SecretKey)">encodeSecretKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A>&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;byte[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#encryptBytes(byte[], java.security.Key)">encryptBytes</A></B>(byte[]&nbsp;bytes,
+             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;byte[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#encryptBytes(byte[], java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties)">encryptBytes</A></B>(byte[]&nbsp;bytes,
+             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey,
+             <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;keyProps)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#encryptSecretKey(javax.crypto.SecretKey, java.security.PublicKey)">encryptSecretKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A>&nbsp;secretKey,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</A>&nbsp;publicKey)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#encryptSecretKey(javax.crypto.SecretKey, java.security.PublicKey, org.apache.cxf.common.util.crypto.KeyProperties)">encryptSecretKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A>&nbsp;secretKey,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</A>&nbsp;publicKey,
+                 <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;props)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#encryptSequence(java.lang.String, java.security.Key)">encryptSequence</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;sequence,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#encryptSequence(java.lang.String, java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties)">encryptSequence</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;sequence,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey,
+                <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;keyProps)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;byte[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#generateSecureRandomBytes(int)">generateSecureRandomBytes</A></B>(int&nbsp;size)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/spec/AlgorithmParameterSpec.html?is-external=true" title="class or interface in java.security.spec">AlgorithmParameterSpec</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getContentEncryptionCipherSpec(int, byte[])">getContentEncryptionCipherSpec</A></B>(int&nbsp;authTagLength,
+                               byte[]&nbsp;iv)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/ECPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces">ECPrivateKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getECPrivateKey(java.lang.String, byte[])">getECPrivateKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;curve,
+                byte[]&nbsp;privateKey)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/ECPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces">ECPrivateKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getECPrivateKey(java.lang.String, java.lang.String)">getECPrivateKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;curve,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPrivateKey)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/ECPublicKey.html?is-external=true" title="class or interface in java.security.interfaces">ECPublicKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getECPublicKey(java.lang.String, byte[], byte[])">getECPublicKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;curve,
+               byte[]&nbsp;xPoint,
+               byte[]&nbsp;yPoint)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/ECPublicKey.html?is-external=true" title="class or interface in java.security.interfaces">ECPublicKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getECPublicKey(java.lang.String, java.lang.String, java.lang.String)">getECPublicKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;curve,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedXPoint,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedYPoint)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/spec/AlgorithmParameterSpec.html?is-external=true" title="class or interface in java.security.spec">AlgorithmParameterSpec</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getGCMParameterSpec(int, byte[])">getGCMParameterSpec</A></B>(int&nbsp;authTagLength,
+                    byte[]&nbsp;iv)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces">RSAPrivateKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getRSAPrivateKey(byte[], byte[])">getRSAPrivateKey</A></B>(byte[]&nbsp;modulusBytes,
+                 byte[]&nbsp;privateExponentBytes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces">RSAPrivateKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getRSAPrivateKey(byte[], byte[], byte[], byte[], byte[], byte[], byte[], byte[])">getRSAPrivateKey</A></B>(byte[]&nbsp;modulusBytes,
+                 byte[]&nbsp;publicExponentBytes,
+                 byte[]&nbsp;privateExponentBytes,
+                 byte[]&nbsp;primePBytes,
+                 byte[]&nbsp;primeQBytes,
+                 byte[]&nbsp;primeExpPBytes,
+                 byte[]&nbsp;primeExpQBytes,
+                 byte[]&nbsp;crtCoefficientBytes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces">RSAPrivateKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getRSAPrivateKey(java.lang.String, java.lang.String)">getRSAPrivateKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedModulus,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPrivateExponent)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces">RSAPrivateKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getRSAPrivateKey(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)">getRSAPrivateKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedModulus,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPublicExponent,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPrivateExponent,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPrimeP,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPrimeQ,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPrimeExpP,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPrimeExpQ,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedCrtCoefficient)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces">RSAPublicKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getRSAPublicKey(byte[], byte[])">getRSAPublicKey</A></B>(byte[]&nbsp;modulusBytes,
+                byte[]&nbsp;publicExponentBytes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces">RSAPublicKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getRSAPublicKey(java.security.KeyFactory, byte[], byte[])">getRSAPublicKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/KeyFactory.html?is-external=true" title="class or interface in java.security">KeyFactory</A>&nbsp;factory,
+                byte[]&nbsp;modulusBytes,
+                byte[]&nbsp;publicExponentBytes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces">RSAPublicKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getRSAPublicKey(java.lang.String, java.lang.String)">getRSAPublicKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedModulus,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPublicExponent)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getSecretKey(org.apache.cxf.common.util.crypto.KeyProperties)">getSecretKey</A></B>(<A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;props)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getSecretKey(java.lang.String)">getSecretKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;symEncAlgo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getSecretKey(java.lang.String, int)">getSecretKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;symEncAlgo,
+             int&nbsp;keySize)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Signature.html?is-external=true" title="class or interface in java.security">Signature</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#getSignature(java.security.PrivateKey, java.lang.String, java.security.SecureRandom, java.security.spec.AlgorithmParameterSpec)">getSignature</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A>&nbsp;key,
+             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;signAlgo,
+             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/SecureRandom.html?is-external=true" title="class or interface in java.security">SecureRandom</A>&nbsp;random,
+             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/spec/AlgorithmParameterSpec.html?is-external=true" title="class or interface in java.security.spec">AlgorithmParameterSpec</A>&nbsp;params)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/Cipher.html?is-external=true" title="class or interface in javax.crypto">Cipher</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#initCipher(java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties, int)">initCipher</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey,
+           <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;keyProps,
+           int&nbsp;mode)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/Certificate.html?is-external=true" title="class or interface in java.security.cert">Certificate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#loadCertificate(java.io.InputStream, char[], java.lang.String, java.lang.String)">loadCertificate</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A>&nbsp;storeLocation,
+                char[]&nbsp;storePassword,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;storeType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/Certificate.html?is-external=true" title="class or interface in java.security.cert">Certificate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#loadCertificate(java.security.KeyStore, java.lang.String)">loadCertificate</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.html?is-external=true" title="class or interface in java.security">KeyStore</A>&nbsp;keyStore,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.html?is-external=true" title="class or interface in java.security">KeyStore</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#loadKeyStore(java.io.InputStream, char[], java.lang.String)">loadKeyStore</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A>&nbsp;storeLocation,
+             char[]&nbsp;storePassword,
+             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#loadPrivateKey(java.io.InputStream, char[], char[], java.lang.String, java.lang.String)">loadPrivateKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A>&nbsp;storeLocation,
+               char[]&nbsp;storePassword,
+               char[]&nbsp;keyPassword,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;storeType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#loadPrivateKey(java.security.KeyStore, char[], java.lang.String)">loadPrivateKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.html?is-external=true" title="class or interface in java.security">KeyStore</A>&nbsp;keyStore,
+               char[]&nbsp;keyPassword,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#loadPublicKey(java.io.InputStream, char[], java.lang.String, java.lang.String)">loadPublicKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A>&nbsp;storeLocation,
+              char[]&nbsp;storePassword,
+              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias,
+              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;storeType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#loadPublicKey(java.security.KeyStore, java.lang.String)">loadPublicKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.html?is-external=true" title="class or interface in java.security">KeyStore</A>&nbsp;keyStore,
+              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;byte[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#signData(byte[], java.security.PrivateKey, java.lang.String)">signData</A></B>(byte[]&nbsp;data,
+         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A>&nbsp;key,
+         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;signAlgo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;byte[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#signData(byte[], java.security.PrivateKey, java.lang.String, java.security.SecureRandom, java.security.spec.AlgorithmParameterSpec)">signData</A></B>(byte[]&nbsp;data,
+         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A>&nbsp;key,
+         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;signAlgo,
+         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/SecureRandom.html?is-external=true" title="class or interface in java.security">SecureRandom</A>&nbsp;random,
+         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/spec/AlgorithmParameterSpec.html?is-external=true" title="class or interface in java.security.spec">AlgorithmParameterSpec</A>&nbsp;params)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#unwrapKey(byte[], java.lang.String, java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties, int)">unwrapKey</A></B>(byte[]&nbsp;wrappedBytes,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wrappedKeyAlgo,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;unwrapperKey,
+          <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;keyProps,
+          int&nbsp;wrappedKeyType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#unwrapSecretKey(byte[], java.lang.String, java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties)">unwrapSecretKey</A></B>(byte[]&nbsp;wrappedBytes,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wrappedKeyAlgo,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;unwrapperKey,
+                <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;keyProps)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#unwrapSecretKey(byte[], java.lang.String, java.security.Key, java.lang.String)">unwrapSecretKey</A></B>(byte[]&nbsp;wrappedBytes,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wrappedKeyAlgo,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;unwrapperKey,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;unwrapperKeyAlgo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#verifySignature(byte[], byte[], java.security.PublicKey, java.lang.String)">verifySignature</A></B>(byte[]&nbsp;data,
+                byte[]&nbsp;signature,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</A>&nbsp;key,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;signAlgo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#verifySignature(byte[], byte[], java.security.PublicKey, java.lang.String, java.security.spec.AlgorithmParameterSpec)">verifySignature</A></B>(byte[]&nbsp;data,
+                byte[]&nbsp;signature,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</A>&nbsp;key,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;signAlgo,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/spec/AlgorithmParameterSpec.html?is-external=true" title="class or interface in java.security.spec">AlgorithmParameterSpec</A>&nbsp;params)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;byte[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#wrapSecretKey(byte[], java.lang.String, java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties)">wrapSecretKey</A></B>(byte[]&nbsp;keyBytes,
+              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;keyAlgo,
+              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;wrapperKey,
+              <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;wrapperKeyProps)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;byte[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/common/util/crypto/CryptoUtils.html#wrapSecretKey(java.security.Key, java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties)">wrapSecretKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey,
+              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;wrapperKey,
+              <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;keyProps)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="encodeSecretKey(javax.crypto.SecretKey)"><!-- --></A><H3>
+encodeSecretKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>encodeSecretKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A>&nbsp;key)
+                              throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="encryptSecretKey(javax.crypto.SecretKey, java.security.PublicKey)"><!-- --></A><H3>
+encryptSecretKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>encryptSecretKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A>&nbsp;secretKey,
+                                      <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</A>&nbsp;publicKey)
+                               throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="encryptSecretKey(javax.crypto.SecretKey, java.security.PublicKey, org.apache.cxf.common.util.crypto.KeyProperties)"><!-- --></A><H3>
+encryptSecretKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>encryptSecretKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A>&nbsp;secretKey,
+                                      <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</A>&nbsp;publicKey,
+                                      <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;props)
+                               throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="generateSecureRandomBytes(int)"><!-- --></A><H3>
+generateSecureRandomBytes</H3>
+<PRE>
+public static byte[] <B>generateSecureRandomBytes</B>(int&nbsp;size)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRSAPublicKey(java.lang.String, java.lang.String)"><!-- --></A><H3>
+getRSAPublicKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces">RSAPublicKey</A> <B>getRSAPublicKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedModulus,
+                                           <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPublicExponent)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRSAPublicKey(byte[], byte[])"><!-- --></A><H3>
+getRSAPublicKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces">RSAPublicKey</A> <B>getRSAPublicKey</B>(byte[]&nbsp;modulusBytes,
+                                           byte[]&nbsp;publicExponentBytes)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRSAPublicKey(java.security.KeyFactory, byte[], byte[])"><!-- --></A><H3>
+getRSAPublicKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPublicKey.html?is-external=true" title="class or interface in java.security.interfaces">RSAPublicKey</A> <B>getRSAPublicKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/KeyFactory.html?is-external=true" title="class or interface in java.security">KeyFactory</A>&nbsp;factory,
+                                           byte[]&nbsp;modulusBytes,
+                                           byte[]&nbsp;publicExponentBytes)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRSAPrivateKey(java.lang.String, java.lang.String)"><!-- --></A><H3>
+getRSAPrivateKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces">RSAPrivateKey</A> <B>getRSAPrivateKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedModulus,
+                                             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPrivateExponent)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRSAPrivateKey(byte[], byte[])"><!-- --></A><H3>
+getRSAPrivateKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces">RSAPrivateKey</A> <B>getRSAPrivateKey</B>(byte[]&nbsp;modulusBytes,
+                                             byte[]&nbsp;privateExponentBytes)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRSAPrivateKey(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)"><!-- --></A><H3>
+getRSAPrivateKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces">RSAPrivateKey</A> <B>getRSAPrivateKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedModulus,
+                                             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPublicExponent,
+                                             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPrivateExponent,
+                                             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPrimeP,
+                                             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPrimeQ,
+                                             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPrimeExpP,
+                                             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPrimeExpQ,
+                                             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedCrtCoefficient)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRSAPrivateKey(byte[], byte[], byte[], byte[], byte[], byte[], byte[], byte[])"><!-- --></A><H3>
+getRSAPrivateKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/RSAPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces">RSAPrivateKey</A> <B>getRSAPrivateKey</B>(byte[]&nbsp;modulusBytes,
+                                             byte[]&nbsp;publicExponentBytes,
+                                             byte[]&nbsp;privateExponentBytes,
+                                             byte[]&nbsp;primePBytes,
+                                             byte[]&nbsp;primeQBytes,
+                                             byte[]&nbsp;primeExpPBytes,
+                                             byte[]&nbsp;primeExpQBytes,
+                                             byte[]&nbsp;crtCoefficientBytes)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getECPrivateKey(java.lang.String, java.lang.String)"><!-- --></A><H3>
+getECPrivateKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/ECPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces">ECPrivateKey</A> <B>getECPrivateKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;curve,
+                                           <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedPrivateKey)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getECPrivateKey(java.lang.String, byte[])"><!-- --></A><H3>
+getECPrivateKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/ECPrivateKey.html?is-external=true" title="class or interface in java.security.interfaces">ECPrivateKey</A> <B>getECPrivateKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;curve,
+                                           byte[]&nbsp;privateKey)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getECPublicKey(java.lang.String, java.lang.String, java.lang.String)"><!-- --></A><H3>
+getECPublicKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/ECPublicKey.html?is-external=true" title="class or interface in java.security.interfaces">ECPublicKey</A> <B>getECPublicKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;curve,
+                                         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedXPoint,
+                                         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedYPoint)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getECPublicKey(java.lang.String, byte[], byte[])"><!-- --></A><H3>
+getECPublicKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/interfaces/ECPublicKey.html?is-external=true" title="class or interface in java.security.interfaces">ECPublicKey</A> <B>getECPublicKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;curve,
+                                         byte[]&nbsp;xPoint,
+                                         byte[]&nbsp;yPoint)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getContentEncryptionCipherSpec(int, byte[])"><!-- --></A><H3>
+getContentEncryptionCipherSpec</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/spec/AlgorithmParameterSpec.html?is-external=true" title="class or interface in java.security.spec">AlgorithmParameterSpec</A> <B>getContentEncryptionCipherSpec</B>(int&nbsp;authTagLength,
+                                                                    byte[]&nbsp;iv)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getGCMParameterSpec(int, byte[])"><!-- --></A><H3>
+getGCMParameterSpec</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/spec/AlgorithmParameterSpec.html?is-external=true" title="class or interface in java.security.spec">AlgorithmParameterSpec</A> <B>getGCMParameterSpec</B>(int&nbsp;authTagLength,
+                                                         byte[]&nbsp;iv)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="signData(byte[], java.security.PrivateKey, java.lang.String)"><!-- --></A><H3>
+signData</H3>
+<PRE>
+public static byte[] <B>signData</B>(byte[]&nbsp;data,
+                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A>&nbsp;key,
+                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;signAlgo)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="signData(byte[], java.security.PrivateKey, java.lang.String, java.security.SecureRandom, java.security.spec.AlgorithmParameterSpec)"><!-- --></A><H3>
+signData</H3>
+<PRE>
+public static byte[] <B>signData</B>(byte[]&nbsp;data,
+                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A>&nbsp;key,
+                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;signAlgo,
+                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/SecureRandom.html?is-external=true" title="class or interface in java.security">SecureRandom</A>&nbsp;random,
+                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/spec/AlgorithmParameterSpec.html?is-external=true" title="class or interface in java.security.spec">AlgorithmParameterSpec</A>&nbsp;params)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSignature(java.security.PrivateKey, java.lang.String, java.security.SecureRandom, java.security.spec.AlgorithmParameterSpec)"><!-- --></A><H3>
+getSignature</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Signature.html?is-external=true" title="class or interface in java.security">Signature</A> <B>getSignature</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A>&nbsp;key,
+                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;signAlgo,
+                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/SecureRandom.html?is-external=true" title="class or interface in java.security">SecureRandom</A>&nbsp;random,
+                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/spec/AlgorithmParameterSpec.html?is-external=true" title="class or interface in java.security.spec">AlgorithmParameterSpec</A>&nbsp;params)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="verifySignature(byte[], byte[], java.security.PublicKey, java.lang.String)"><!-- --></A><H3>
+verifySignature</H3>
+<PRE>
+public static boolean <B>verifySignature</B>(byte[]&nbsp;data,
+                                      byte[]&nbsp;signature,
+                                      <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</A>&nbsp;key,
+                                      <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;signAlgo)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="verifySignature(byte[], byte[], java.security.PublicKey, java.lang.String, java.security.spec.AlgorithmParameterSpec)"><!-- --></A><H3>
+verifySignature</H3>
+<PRE>
+public static boolean <B>verifySignature</B>(byte[]&nbsp;data,
+                                      byte[]&nbsp;signature,
+                                      <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</A>&nbsp;key,
+                                      <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;signAlgo,
+                                      <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/spec/AlgorithmParameterSpec.html?is-external=true" title="class or interface in java.security.spec">AlgorithmParameterSpec</A>&nbsp;params)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSecretKey(java.lang.String)"><!-- --></A><H3>
+getSecretKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A> <B>getSecretKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;symEncAlgo)
+                              throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSecretKey(java.lang.String, int)"><!-- --></A><H3>
+getSecretKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A> <B>getSecretKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;symEncAlgo,
+                                     int&nbsp;keySize)
+                              throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSecretKey(org.apache.cxf.common.util.crypto.KeyProperties)"><!-- --></A><H3>
+getSecretKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A> <B>getSecretKey</B>(<A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;props)
+                              throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="decryptSequence(java.lang.String, java.lang.String)"><!-- --></A><H3>
+decryptSequence</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>decryptSequence</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedToken,
+                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedSecretKey)
+                              throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="decryptSequence(java.lang.String, java.lang.String, org.apache.cxf.common.util.crypto.KeyProperties)"><!-- --></A><H3>
+decryptSequence</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>decryptSequence</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedData,
+                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedSecretKey,
+                                     <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;props)
+                              throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="decryptSequence(java.lang.String, java.security.Key)"><!-- --></A><H3>
+decryptSequence</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>decryptSequence</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedData,
+                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey)
+                              throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="decryptSequence(java.lang.String, java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties)"><!-- --></A><H3>
+decryptSequence</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>decryptSequence</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedData,
+                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey,
+                                     <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;props)
+                              throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="encryptSequence(java.lang.String, java.security.Key)"><!-- --></A><H3>
+encryptSequence</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>encryptSequence</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;sequence,
+                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey)
+                              throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="encryptSequence(java.lang.String, java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties)"><!-- --></A><H3>
+encryptSequence</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>encryptSequence</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;sequence,
+                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey,
+                                     <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;keyProps)
+                              throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="encodeBytes(byte[])"><!-- --></A><H3>
+encodeBytes</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>encodeBytes</B>(byte[]&nbsp;bytes)
+                          throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="encryptBytes(byte[], java.security.Key)"><!-- --></A><H3>
+encryptBytes</H3>
+<PRE>
+public static byte[] <B>encryptBytes</B>(byte[]&nbsp;bytes,
+                                  <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey)
+                           throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="encryptBytes(byte[], java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties)"><!-- --></A><H3>
+encryptBytes</H3>
+<PRE>
+public static byte[] <B>encryptBytes</B>(byte[]&nbsp;bytes,
+                                  <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey,
+                                  <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;keyProps)
+                           throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="decryptBytes(byte[], java.security.Key)"><!-- --></A><H3>
+decryptBytes</H3>
+<PRE>
+public static byte[] <B>decryptBytes</B>(byte[]&nbsp;bytes,
+                                  <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey)
+                           throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="decryptBytes(byte[], java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties)"><!-- --></A><H3>
+decryptBytes</H3>
+<PRE>
+public static byte[] <B>decryptBytes</B>(byte[]&nbsp;bytes,
+                                  <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey,
+                                  <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;keyProps)
+                           throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="wrapSecretKey(byte[], java.lang.String, java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties)"><!-- --></A><H3>
+wrapSecretKey</H3>
+<PRE>
+public static byte[] <B>wrapSecretKey</B>(byte[]&nbsp;keyBytes,
+                                   <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;keyAlgo,
+                                   <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;wrapperKey,
+                                   <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;wrapperKeyProps)
+                            throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="wrapSecretKey(java.security.Key, java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties)"><!-- --></A><H3>
+wrapSecretKey</H3>
+<PRE>
+public static byte[] <B>wrapSecretKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey,
+                                   <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;wrapperKey,
+                                   <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;keyProps)
+                            throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unwrapSecretKey(byte[], java.lang.String, java.security.Key, java.lang.String)"><!-- --></A><H3>
+unwrapSecretKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A> <B>unwrapSecretKey</B>(byte[]&nbsp;wrappedBytes,
+                                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wrappedKeyAlgo,
+                                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;unwrapperKey,
+                                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;unwrapperKeyAlgo)
+                                 throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unwrapSecretKey(byte[], java.lang.String, java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties)"><!-- --></A><H3>
+unwrapSecretKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A> <B>unwrapSecretKey</B>(byte[]&nbsp;wrappedBytes,
+                                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wrappedKeyAlgo,
+                                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;unwrapperKey,
+                                        <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;keyProps)
+                                 throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unwrapKey(byte[], java.lang.String, java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties, int)"><!-- --></A><H3>
+unwrapKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A> <B>unwrapKey</B>(byte[]&nbsp;wrappedBytes,
+                            <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wrappedKeyAlgo,
+                            <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;unwrapperKey,
+                            <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;keyProps,
+                            int&nbsp;wrappedKeyType)
+                     throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="initCipher(java.security.Key, org.apache.cxf.common.util.crypto.KeyProperties, int)"><!-- --></A><H3>
+initCipher</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/Cipher.html?is-external=true" title="class or interface in javax.crypto">Cipher</A> <B>initCipher</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</A>&nbsp;secretKey,
+                                <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;keyProps,
+                                int&nbsp;mode)
+                         throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="decodeSecretKey(java.lang.String)"><!-- --></A><H3>
+decodeSecretKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A> <B>decodeSecretKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedSecretKey)
+                                 throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="decodeSecretKey(java.lang.String, java.lang.String)"><!-- --></A><H3>
+decodeSecretKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A> <B>decodeSecretKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedSecretKey,
+                                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;secretKeyAlgo)
+                                 throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="decryptSecretKey(java.lang.String, java.security.PrivateKey)"><!-- --></A><H3>
+decryptSecretKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A> <B>decryptSecretKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedEncryptedSecretKey,
+                                         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A>&nbsp;privateKey)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="decryptSecretKey(java.lang.String, java.lang.String, java.security.PrivateKey)"><!-- --></A><H3>
+decryptSecretKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A> <B>decryptSecretKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedEncryptedSecretKey,
+                                         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;secretKeyAlgo,
+                                         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A>&nbsp;privateKey)
+                                  throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="decryptSecretKey(java.lang.String, java.lang.String, org.apache.cxf.common.util.crypto.KeyProperties, java.security.PrivateKey)"><!-- --></A><H3>
+decryptSecretKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A> <B>decryptSecretKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedEncryptedSecretKey,
+                                         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;secretKeyAlgo,
+                                         <A HREF="../../../../../../org/apache/cxf/common/util/crypto/KeyProperties.html" title="class in org.apache.cxf.common.util.crypto">KeyProperties</A>&nbsp;props,
+                                         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A>&nbsp;privateKey)
+                                  throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createSecretKeySpec(java.lang.String, java.lang.String)"><!-- --></A><H3>
+createSecretKeySpec</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A> <B>createSecretKeySpec</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedBytes,
+                                            <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;algo)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createSecretKeySpec(byte[], java.lang.String)"><!-- --></A><H3>
+createSecretKeySpec</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</A> <B>createSecretKeySpec</B>(byte[]&nbsp;bytes,
+                                            <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;algo)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="decodeSequence(java.lang.String)"><!-- --></A><H3>
+decodeSequence</H3>
+<PRE>
+public static byte[] <B>decodeSequence</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encodedSequence)
+                             throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="loadCertificate(java.io.InputStream, char[], java.lang.String, java.lang.String)"><!-- --></A><H3>
+loadCertificate</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/Certificate.html?is-external=true" title="class or interface in java.security.cert">Certificate</A> <B>loadCertificate</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A>&nbsp;storeLocation,
+                                          char[]&nbsp;storePassword,
+                                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias,
+                                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;storeType)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="loadCertificate(java.security.KeyStore, java.lang.String)"><!-- --></A><H3>
+loadCertificate</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/Certificate.html?is-external=true" title="class or interface in java.security.cert">Certificate</A> <B>loadCertificate</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.html?is-external=true" title="class or interface in java.security">KeyStore</A>&nbsp;keyStore,
+                                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="loadPublicKey(java.io.InputStream, char[], java.lang.String, java.lang.String)"><!-- --></A><H3>
+loadPublicKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</A> <B>loadPublicKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A>&nbsp;storeLocation,
+                                      char[]&nbsp;storePassword,
+                                      <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias,
+                                      <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;storeType)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="loadPublicKey(java.security.KeyStore, java.lang.String)"><!-- --></A><H3>
+loadPublicKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</A> <B>loadPublicKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.html?is-external=true" title="class or interface in java.security">KeyStore</A>&nbsp;keyStore,
+                                      <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="loadKeyStore(java.io.InputStream, char[], java.lang.String)"><!-- --></A><H3>
+loadKeyStore</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.html?is-external=true" title="class or interface in java.security">KeyStore</A> <B>loadKeyStore</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A>&nbsp;storeLocation,
+                                    char[]&nbsp;storePassword,
+                                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;type)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="loadPrivateKey(java.io.InputStream, char[], char[], java.lang.String, java.lang.String)"><!-- --></A><H3>
+loadPrivateKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A> <B>loadPrivateKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A>&nbsp;storeLocation,
+                                        char[]&nbsp;storePassword,
+                                        char[]&nbsp;keyPassword,
+                                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias,
+                                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;storeType)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="loadPrivateKey(java.security.KeyStore, char[], java.lang.String)"><!-- --></A><H3>
+loadPrivateKey</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</A> <B>loadPrivateKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.html?is-external=true" title="class or interface in java.security">KeyStore</A>&nbsp;keyStore,
+                                        char[]&nbsp;keyPassword,
+                                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/CryptoUtils.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/common/util/crypto/HmacUtils.html" title="class in org.apache.cxf.common.util.crypto"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/common/util/crypto/CryptoUtils.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="CryptoUtils.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

@@ -1,0 +1,175 @@
+Apache CXF 3.0.2 Release Notes
+
+1. Overview
+
+The 3.0.2 version of Apache CXF is a significant new version of CXF 
+that provides several new features and enhancements.  
+
+New features include: 
+Full JAX-RS 2.0 support
+New streaming based WS-Security implementation
+Bean Validation 1.1
+Much easier feature configuration options for JAX-WS
+New CXF code generator frontend
+Enhanced Reliable-Messaging 1.1 support
+
+As part of the 3.0 refactoring, the runtime has been made smaller, 
+many API’s have changed or where relocated, much duplicate 
+functionality has been removed, etc…  Thus, 3.0 is not completely
+compatible with CXF 2.x and some migration efforts may be required.
+
+Users are encourage to review the migration guide at:
+http://cxf.apache.org/docs/30-migration-guide.html
+for further information and requirements for upgrading from 2.7.x.
+
+3.0.2 fixes over 90 JIRA issues reported by users and the community.
+
+
+
+2. Installation Prerequisites 
+
+Before installing Apache CXF, make sure the following products,
+with the specified versions, are installed on your system:
+
+    * Java 6 Development Kit
+    * Apache Maven 3.x to build the samples
+
+
+3.  Integrating CXF Into Your Application
+
+If you use Maven to build your application, you need merely add
+appropriate dependencies. See the pom.xml files in the samples.
+
+If you don't use Maven, you'll need to add one or more jars to your
+classpath. The file lib/WHICH_JARS should help you decide which 
+jars you need.
+
+4. Building the Samples
+
+Building the samples included in the binary distribution is easy. Change to
+the samples directory and follow the build instructions in the README.txt file 
+included with each sample.
+
+5. Reporting Problems
+
+If you have any problems or want to send feedback of any kind, please e-mail the
+CXF dev list, dev@cxf.apache.org.  You can also file issues in JIRA at:
+
+http://issues.apache.org/jira/browse/CXF
+
+6. Migration notes:
+
+See the migration guide at:
+http://cxf.apache.org/docs/30-migration-guide.html
+for caveats when upgrading from CXF 2.7.x to 3.0.0
+
+
+7. Specific issues, features, and improvements fixed in this version
+
+
+** Bug
+    * [CXF-5744] - @XmlTransient behavior change in WSDL fault content
+    * [CXF-5795] - Reading the entity from a Response with 202 - Accepted causes NullPointerException
+    * [CXF-5844] - Annotations inherited  from interface not merged with annotations from  implementing method
+    * [CXF-5846] - ClassCastException in  org.apache.cxf.jaxrs.provider.BinaryDataProvider & SourceProvider
+    * [CXF-5878] - Disabling policy engine causes NPE
+    * [CXF-5881] - wadl2java failed on nexus wadl
+    * [CXF-5884] - org.apache.cxf.rs.security.oauth2.provider.OAuthJSONProvider is incompatible with JAX-RS 2.0
+    * [CXF-5888] - Unwrapped operation detection not looking for attributes of extended types
+    * [CXF-5889] - No root resource matching request when using atmosphere websocket 
+    * [CXF-5893] - Websocket transport sporadically fails with corrupted data
+    * [CXF-5897] - Relax setter method name restriction for @context injection
+    * [CXF-5898] - Feature wss4j should be updated after saaj-impl version change
+    * [CXF-5899] - JAX-RS 2.0 Configuration injection is not supported if DynamicFeature is not registered
+    * [CXF-5900] - websocket destination in osgi fails to start after being stopped
+    * [CXF-5904] - wadl2java -inheritResourceParams don't generate parent parameter
+    * [CXF-5906] - Claim Manager only parses first claim value
+    * [CXF-5910] - Filters registered by DynamicFeatures match on overloaded resource methods.
+    * [CXF-5911] - SoapFault's lang property is not set in case of SOAP 1.1 faults
+    * [CXF-5913] - logStacktrace Property Not Implemented in MapEventLogger
+    * [CXF-5916] - WADL contains wrong parameter name for parameter beans
+    * [CXF-5917] - SAMLP Response Validator does not decrypt if EncryptedKey is the assertion element child
+    * [CXF-5920] - JAX-RS Link implementation (LinkBuilder) looses context path  
+    * [CXF-5935] - [wadl2java] Multipart method doesn't generate @Multipart params
+    * [CXF-5938] - LuceneQueryVisitor is not reusable / not thread-safe
+    * [CXF-5943] - Throw error in exceptionmapper
+    * [CXF-5946] - ensure unregister cxf http transport Servlet OSGi service before we re-register it
+    * [CXF-5949] - LogBrowser not working
+    * [CXF-5952] - wadl2java: process representation params
+    * [CXF-5953] - wadl2java: generate full class name for representation parameter
+    * [CXF-5958] - incorrect OSGi header in cxf-core bundle
+    * [CXF-5961] - wadl2java: 'required = false' don't generated for @Multipart argument
+    * [CXF-5963] - LuceneQueryVisitor should use analyzer to create query properly
+    * [CXF-5964] - JAX-RS Contexts are injected into Application class too late
+    * [CXF-5966] - NPE in MessageContextImpl when setting ResponseBuilder entity in an ExceptionMapper
+    * [CXF-5968] - Setting use.async.http.conduit property causes IllegalArgumentException
+    * [CXF-5969] - CXF does not pass a generic type to ParamConverterProvider
+    * [CXF-5972] - Fix all karaf features definitions
+    * [CXF-5974] - WADLGenerator sets representation media type to application/octet-stream by default
+    * [CXF-5976] - incompatible with javax.xml.bind.JAXBElement error when using List<JAXBElement<Book>>  as resource method param
+    * [CXF-5978] - Incomplete dependencies in archetype cxf-jaxrs-service
+    * [CXF-5983] - Security processing failed (actions mismatch) occurs due to ENCR action appearing twice
+    * [CXF-5985] - wadl2java maven plugin: executions don't use plugin-level configuration
+    * [CXF-5988] - Provide support for a pluggable parameter conversion mechanism for JAX-RS client side proxies
+    * [CXF-5989] - Query Params not showing up in WADL when declared using @BeanParam
+    * [CXF-5992] - Cannot set org.apache.cxf.stax.maxAttributeCount
+    * [CXF-5995] - ClientProxyImpl problem with handling @BeanParams with null headers/cookies.
+    * [CXF-5999] - Moving JiBX related systests into its own module.
+    * [CXF-6000] - Wrong default algorithm is used for TrustManagerFactory instantiation
+    * [CXF-6003] - jaxrs:server "basePackages" attribute doesn't initialize REST services properly
+    * [CXF-6007] - WebClient does not resend request in Digest authentication for HTTP methods GET, HEAD, DELETE, OPTIONS (with no body).
+    * [CXF-6010] - NPE in MessageModeOutInterceptor.validateFaultDetail for faults with no <detail>
+    * [CXF-6012] - Setting Content-Type in client WriterInterceptor with JAX-RS MediaType causes class cast exceptions in HttpConduit
+    * [CXF-6015] - Path parameters containing semicolon are truncated due to missing encoding
+    * [CXF-6020] - UrilInfo.getAbsolutePath() missing path separator between servlet url and relative url
+    * [CXF-6021] - WebClient has Accept defaulted to application/xml
+    * [CXF-6027] - oauth2 client redirect uris are never valid
+    * [CXF-6032] - NullPointerException while validating cert for SAML HOK
+    * [CXF-6037] - in JAX-RS search there is no support for java.sql.Time in fiql
+
+** Improvement
+    * [CXF-5652] - WebClient with SSL: javax.net.ssl.SSLHandshakeException handshake_failure
+    * [CXF-5885] - Validate "ActAs" tokens in the STS
+    * [CXF-5891] - ReadHeadersInterceptor performances improvement
+    * [CXF-5892] - Ensure EncryptedKey references BST before it
+    * [CXF-5902] - Provide utility support for Jwe composite AesCbcHmac content encryption algorithm
+    * [CXF-5908] - Making Claims clonable
+    * [CXF-5918] - ResoureUtils#createJaxbContext hides JaxB validation errors
+    * [CXF-5922] - Secure CXF WSDL with standard HTTP Authentication
+    * [CXF-5925] - JEXL Support for STS Claim Mappings
+    * [CXF-5927] - Claim Mapping Utils
+    * [CXF-5929] - WADL to Java code generator should support mappings to parameterized types
+    * [CXF-5932] - Monitor contention at org.apache.cxf.jaxrs.utils.JAXRSUtils.processParameters(OperationResourceInfo, MultivaluedMap, Message)
+    * [CXF-5934] - Make WadlGenerator more easily extensible
+    * [CXF-5937] - CXF Servlets should optionally react to X-Forwarded headers  
+    * [CXF-5944] - Get Jwe and Jws code to the stage where it can be documented
+    * [CXF-5948] - wadl2java -inheritResourceParams: put parent param first
+    * [CXF-5954] - Jwe and Jws JAX-RS filters should be able to use JWK stores
+    * [CXF-5956] - wadl2java: support 'repeating' attribute for response param
+    * [CXF-5959] - support to specify instance.id of ManagedBus
+    * [CXF-5960] - Provide a default encrypting OAuth2 provider
+    * [CXF-5962] - Make LogBrowser sample also run in OSGi
+    * [CXF-5975] - SecurityToken::isExpired: add clock skew option
+    * [CXF-5979] - Allow some headers to be returned in WebSocket's streaming responses
+    * [CXF-5984] - Provide a simple way start a decoupled servlet endpoint
+    * [CXF-5986] - wadl2java maven plugin: add support for filename wildcards
+    * [CXF-5990] - Integration custom parser
+    * [CXF-6006] - StreamingOutput in JAXRS client proxies
+    * [CXF-6009] - Monitor contention at org.apache.cxf.transport.http.Headers
+
+** New Feature
+    * [CXF-5883] - Support rewriting of wsdl for https load balancer which talks to http endpoint
+    * [CXF-5905] - Allow setting additional Security Provider at Exchange level
+    * [CXF-5923] - Create sample to demonstrate usage of search extension with Lucene and Tika 
+
+
+** Task
+    * [CXF-4913] - Add 'validate' option to WADL to Java generator
+    * [CXF-5886] - Provide a default Ehcache based OAuth2 provider
+    * [CXF-5895] - asmhelper broken with asm 5
+    * [CXF-5941] - Update JAX-RS version to 2.0.1
+    * [CXF-5993] - Update to Jettison 1.3.6
+
+** Test
+    * [CXF-5882] - UDPTransportTest.testLargeRequest always failed on some machine
+

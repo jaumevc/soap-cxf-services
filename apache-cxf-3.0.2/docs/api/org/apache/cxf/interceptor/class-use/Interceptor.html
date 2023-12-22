@@ -1,0 +1,1516 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Interface org.apache.cxf.interceptor.Interceptor (Apache CXF JavaDoc 3.0.2 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Interface org.apache.cxf.interceptor.Interceptor (Apache CXF JavaDoc 3.0.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/interceptor//class-useInterceptor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Interceptor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Interface<br>org.apache.cxf.interceptor.Interceptor</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.bus.spring"><B>org.apache.cxf.bus.spring</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.databinding"><B>org.apache.cxf.databinding</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.databinding.stax"><B>org.apache.cxf.databinding.stax</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.feature.transform"><B>org.apache.cxf.feature.transform</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.interceptor"><B>org.apache.cxf.interceptor</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.interceptor.security"><B>org.apache.cxf.interceptor.security</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.interceptor.transform"><B>org.apache.cxf.interceptor.transform</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.phase"><B>org.apache.cxf.phase</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.staxutils.validation"><B>org.apache.cxf.staxutils.validation</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.transport"><B>org.apache.cxf.transport</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.transport.common.gzip"><B>org.apache.cxf.transport.common.gzip</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.validation"><B>org.apache.cxf.validation</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.addressing"><B>org.apache.cxf.ws.addressing</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.bus.spring"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A> in <A HREF="../../../../../org/apache/cxf/bus/spring/package-summary.html">org.apache.cxf.bus.spring</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/bus/spring/package-summary.html">org.apache.cxf.bus.spring</A> that return types with arguments of type <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>BusDefinitionParser.BusConfig.</B><B><A HREF="../../../../../org/apache/cxf/bus/spring/BusDefinitionParser.BusConfig.html#getInFaultInterceptors()">getInFaultInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>BusDefinitionParser.BusConfig.</B><B><A HREF="../../../../../org/apache/cxf/bus/spring/BusDefinitionParser.BusConfig.html#getInInterceptors()">getInInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>BusDefinitionParser.BusConfig.</B><B><A HREF="../../../../../org/apache/cxf/bus/spring/BusDefinitionParser.BusConfig.html#getOutFaultInterceptors()">getOutFaultInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>BusDefinitionParser.BusConfig.</B><B><A HREF="../../../../../org/apache/cxf/bus/spring/BusDefinitionParser.BusConfig.html#getOutInterceptors()">getOutInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Method parameters in <A HREF="../../../../../org/apache/cxf/bus/spring/package-summary.html">org.apache.cxf.bus.spring</A> with type arguments of type <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BusDefinitionParser.BusConfig.</B><B><A HREF="../../../../../org/apache/cxf/bus/spring/BusDefinitionParser.BusConfig.html#setInFaultInterceptors(java.util.List)">setInFaultInterceptors</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;interceptors)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BusDefinitionParser.BusConfig.</B><B><A HREF="../../../../../org/apache/cxf/bus/spring/BusDefinitionParser.BusConfig.html#setInInterceptors(java.util.List)">setInInterceptors</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;interceptors)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BusDefinitionParser.BusConfig.</B><B><A HREF="../../../../../org/apache/cxf/bus/spring/BusDefinitionParser.BusConfig.html#setOutFaultInterceptors(java.util.List)">setOutFaultInterceptors</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;interceptors)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BusDefinitionParser.BusConfig.</B><B><A HREF="../../../../../org/apache/cxf/bus/spring/BusDefinitionParser.BusConfig.html#setOutInterceptors(java.util.List)">setOutInterceptors</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;interceptors)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.databinding"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A> in <A HREF="../../../../../org/apache/cxf/databinding/package-summary.html">org.apache.cxf.databinding</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Fields in <A HREF="../../../../../org/apache/cxf/databinding/package-summary.html">org.apache.cxf.databinding</A> with type parameters of type <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/common/util/ModCountCopyOnWriteArrayList.html" title="class in org.apache.cxf.common.util">ModCountCopyOnWriteArrayList</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractInterceptorProvidingDataBinding.</B><B><A HREF="../../../../../org/apache/cxf/databinding/AbstractInterceptorProvidingDataBinding.html#inFaultInterceptors">inFaultInterceptors</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/common/util/ModCountCopyOnWriteArrayList.html" title="class in org.apache.cxf.common.util">ModCountCopyOnWriteArrayList</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractInterceptorProvidingDataBinding.</B><B><A HREF="../../../../../org/apache/cxf/databinding/AbstractInterceptorProvidingDataBinding.html#inInterceptors">inInterceptors</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/common/util/ModCountCopyOnWriteArrayList.html" title="class in org.apache.cxf.common.util">ModCountCopyOnWriteArrayList</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractInterceptorProvidingDataBinding.</B><B><A HREF="../../../../../org/apache/cxf/databinding/AbstractInterceptorProvidingDataBinding.html#outFaultInterceptors">outFaultInterceptors</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/common/util/ModCountCopyOnWriteArrayList.html" title="class in org.apache.cxf.common.util">ModCountCopyOnWriteArrayList</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractInterceptorProvidingDataBinding.</B><B><A HREF="../../../../../org/apache/cxf/databinding/AbstractInterceptorProvidingDataBinding.html#outInterceptors">outInterceptors</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/databinding/package-summary.html">org.apache.cxf.databinding</A> that return types with arguments of type <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractInterceptorProvidingDataBinding.</B><B><A HREF="../../../../../org/apache/cxf/databinding/AbstractInterceptorProvidingDataBinding.html#getInFaultInterceptors()">getInFaultInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractInterceptorProvidingDataBinding.</B><B><A HREF="../../../../../org/apache/cxf/databinding/AbstractInterceptorProvidingDataBinding.html#getInInterceptors()">getInInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractInterceptorProvidingDataBinding.</B><B><A HREF="../../../../../org/apache/cxf/databinding/AbstractInterceptorProvidingDataBinding.html#getOutFaultInterceptors()">getOutFaultInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractInterceptorProvidingDataBinding.</B><B><A HREF="../../../../../org/apache/cxf/databinding/AbstractInterceptorProvidingDataBinding.html#getOutInterceptors()">getOutInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.databinding.stax"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A> in <A HREF="../../../../../org/apache/cxf/databinding/stax/package-summary.html">org.apache.cxf.databinding.stax</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/cxf/databinding/stax/package-summary.html">org.apache.cxf.databinding.stax</A> that implement <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/databinding/stax/StaxDataBindingInterceptor.html" title="class in org.apache.cxf.databinding.stax">StaxDataBindingInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.feature.transform"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A> in <A HREF="../../../../../org/apache/cxf/feature/transform/package-summary.html">org.apache.cxf.feature.transform</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/cxf/feature/transform/package-summary.html">org.apache.cxf.feature.transform</A> that implement <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/feature/transform/AbstractXSLTInterceptor.html" title="class in org.apache.cxf.feature.transform">AbstractXSLTInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an XMLStreamReader from the InputStream on the Message.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/feature/transform/XSLTInInterceptor.html" title="class in org.apache.cxf.feature.transform">XSLTInInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Class provides XSLT transformation of incoming message.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/feature/transform/XSLTOutInterceptor.html" title="class in org.apache.cxf.feature.transform">XSLTOutInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Class provides XSLT transformation of outgoing message.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.interceptor"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A> in <A HREF="../../../../../org/apache/cxf/interceptor/package-summary.html">org.apache.cxf.interceptor</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/cxf/interceptor/package-summary.html">org.apache.cxf.interceptor</A> that implement <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractInDatabindingInterceptor.html" title="class in org.apache.cxf.interceptor">AbstractInDatabindingInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractLoggingInterceptor.html" title="class in org.apache.cxf.interceptor">AbstractLoggingInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A simple logging handler which outputs the bytes of the message to the
+ Logger.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractOutDatabindingInterceptor.html" title="class in org.apache.cxf.interceptor">AbstractOutDatabindingInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/AttachmentInInterceptor.html" title="class in org.apache.cxf.interceptor">AttachmentInInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/AttachmentOutInterceptor.html" title="class in org.apache.cxf.interceptor">AttachmentOutInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/AttachmentOutInterceptor.AttachmentOutEndingInterceptor.html" title="class in org.apache.cxf.interceptor">AttachmentOutInterceptor.AttachmentOutEndingInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/ClientFaultConverter.html" title="class in org.apache.cxf.interceptor">ClientFaultConverter</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Takes a Fault and converts it to a local exception type if possible.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/FaultOutInterceptor.html" title="class in org.apache.cxf.interceptor">FaultOutInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/FIStaxInInterceptor.html" title="class in org.apache.cxf.interceptor">FIStaxInInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an XMLStreamReader from the InputStream on the Message.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/FIStaxOutInterceptor.html" title="class in org.apache.cxf.interceptor">FIStaxOutInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an XMLStreamReader from the InputStream on the Message.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/LoggingInInterceptor.html" title="class in org.apache.cxf.interceptor">LoggingInInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A simple logging handler which outputs the bytes of the message to the
+ Logger.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/LoggingOutInterceptor.html" title="class in org.apache.cxf.interceptor">LoggingOutInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/MessageSenderInterceptor.html" title="class in org.apache.cxf.interceptor">MessageSenderInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Takes the Conduit from the exchange and sends the message through it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/MessageSenderInterceptor.MessageSenderEndingInterceptor.html" title="class in org.apache.cxf.interceptor">MessageSenderInterceptor.MessageSenderEndingInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/OneWayProcessorInterceptor.html" title="class in org.apache.cxf.interceptor">OneWayProcessorInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/OutgoingChainInterceptor.html" title="class in org.apache.cxf.interceptor">OutgoingChainInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/ServiceInvokerInterceptor.html" title="class in org.apache.cxf.interceptor">ServiceInvokerInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invokes a Binding's invoker with the <code>INVOCATION_INPUT</code> from
+ the Exchange.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/StaxInEndingInterceptor.html" title="class in org.apache.cxf.interceptor">StaxInEndingInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/StaxInInterceptor.html" title="class in org.apache.cxf.interceptor">StaxInInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an XMLStreamReader from the InputStream on the Message.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/StaxOutEndingInterceptor.html" title="class in org.apache.cxf.interceptor">StaxOutEndingInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/StaxOutInterceptor.html" title="class in org.apache.cxf.interceptor">StaxOutInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an XMLStreamWriter from the OutputStream on the Message.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/interceptor/package-summary.html">org.apache.cxf.interceptor</A> that return types with arguments of type <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractAttributedInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#getInFaultInterceptors()">getInFaultInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractBasicInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#getInFaultInterceptors()">getInFaultInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AnnotationInterceptors.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AnnotationInterceptors.html#getInFaultInterceptors()">getInFaultInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>InterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getInFaultInterceptors()">getInFaultInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the list of interceptors attached to the incoming fault interceptor
+ chain of the object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractAttributedInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#getInInterceptors()">getInInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractBasicInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#getInInterceptors()">getInInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AnnotationInterceptors.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AnnotationInterceptors.html#getInInterceptors()">getInInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>InterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getInInterceptors()">getInInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the list of interceptors attached to the incoming interceptor
+ chain of the object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/ListIterator.html?is-external=true" title="class or interface in java.util">ListIterator</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>InterceptorChain.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/InterceptorChain.html#getIterator()">getIterator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractAttributedInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#getOutFaultInterceptors()">getOutFaultInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractBasicInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#getOutFaultInterceptors()">getOutFaultInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AnnotationInterceptors.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AnnotationInterceptors.html#getOutFaultInterceptors()">getOutFaultInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>InterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getOutFaultInterceptors()">getOutFaultInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the list of interceptors attached to the outgoing fault interceptor
+ chain of the object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractAttributedInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#getOutInterceptors()">getOutInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractBasicInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#getOutInterceptors()">getOutInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>AnnotationInterceptors.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AnnotationInterceptors.html#getOutInterceptors()">getOutInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>InterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getOutInterceptors()">getOutInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the list of interceptors attached to the outgoing interceptor
+ chain of the object.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/interceptor/package-summary.html">org.apache.cxf.interceptor</A> with parameters of type <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>InterceptorChain.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/InterceptorChain.html#add(org.apache.cxf.interceptor.Interceptor)">add</A></B>(<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a single interceptor to the interceptor chain.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>InterceptorChain.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/InterceptorChain.html#remove(org.apache.cxf.interceptor.Interceptor)">remove</A></B>(<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Method parameters in <A HREF="../../../../../org/apache/cxf/interceptor/package-summary.html">org.apache.cxf.interceptor</A> with type arguments of type <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>InterceptorChain.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/InterceptorChain.html#add(java.util.Collection)">add</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds multiple interceptors to the interceptor chain.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractAttributedInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#setInFaultInterceptors(java.util.List)">setInFaultInterceptors</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;interceptors)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractBasicInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#setInFaultInterceptors(java.util.List)">setInFaultInterceptors</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;interceptors)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractAttributedInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#setInInterceptors(java.util.List)">setInInterceptors</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;interceptors)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractBasicInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#setInInterceptors(java.util.List)">setInInterceptors</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;interceptors)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractAttributedInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#setOutFaultInterceptors(java.util.List)">setOutFaultInterceptors</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;interceptors)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractBasicInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#setOutFaultInterceptors(java.util.List)">setOutFaultInterceptors</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;interceptors)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractAttributedInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#setOutInterceptors(java.util.List)">setOutInterceptors</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;interceptors)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractBasicInterceptorProvider.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#setOutInterceptors(java.util.List)">setOutInterceptors</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;interceptors)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.interceptor.security"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A> in <A HREF="../../../../../org/apache/cxf/interceptor/security/package-summary.html">org.apache.cxf.interceptor.security</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/cxf/interceptor/security/package-summary.html">org.apache.cxf.interceptor.security</A> that implement <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/security/AbstractAuthorizingInInterceptor.html" title="class in org.apache.cxf.interceptor.security">AbstractAuthorizingInInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/security/AbstractSecurityContextInInterceptor.html" title="class in org.apache.cxf.interceptor.security">AbstractSecurityContextInInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/security/AbstractUsernameTokenInInterceptor.html" title="class in org.apache.cxf.interceptor.security">AbstractUsernameTokenInInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/security/DelegatingAuthenticationInterceptor.html" title="class in org.apache.cxf.interceptor.security">DelegatingAuthenticationInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/security/DepthRestrictingStreamInterceptor.html" title="class in org.apache.cxf.interceptor.security">DepthRestrictingStreamInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an XMLStreamReader from the InputStream on the Message.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/security/JAASLoginInterceptor.html" title="class in org.apache.cxf.interceptor.security">JAASLoginInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/security/OperationInfoAuthorizingInterceptor.html" title="class in org.apache.cxf.interceptor.security">OperationInfoAuthorizingInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/security/SecureAnnotationsInterceptor.html" title="class in org.apache.cxf.interceptor.security">SecureAnnotationsInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/security/SimpleAuthorizingInterceptor.html" title="class in org.apache.cxf.interceptor.security">SimpleAuthorizingInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Method parameters in <A HREF="../../../../../org/apache/cxf/interceptor/security/package-summary.html">org.apache.cxf.interceptor.security</A> with type arguments of type <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>DelegatingAuthenticationInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/security/DelegatingAuthenticationInterceptor.html#setSchemeHandlers(java.util.Map)">setSchemeHandlers</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;handlers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.interceptor.transform"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A> in <A HREF="../../../../../org/apache/cxf/interceptor/transform/package-summary.html">org.apache.cxf.interceptor.transform</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/cxf/interceptor/transform/package-summary.html">org.apache.cxf.interceptor.transform</A> that implement <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/transform/TransformInInterceptor.html" title="class in org.apache.cxf.interceptor.transform">TransformInInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an XMLStreamReader from the InputStream on the Message.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/interceptor/transform/TransformOutInterceptor.html" title="class in org.apache.cxf.interceptor.transform">TransformOutInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an XMLStreamReader from the InputStream on the Message.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.phase"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A> in <A HREF="../../../../../org/apache/cxf/phase/package-summary.html">org.apache.cxf.phase</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subinterfaces of <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A> in <A HREF="../../../../../org/apache/cxf/phase/package-summary.html">org.apache.cxf.phase</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptor.html" title="interface in org.apache.cxf.phase">PhaseInterceptor&lt;T extends Message&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A phase interceptor is an intercetor that participates in a 
+ PhaseInterceptorChain.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/cxf/phase/package-summary.html">org.apache.cxf.phase</A> that implement <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/phase/AbstractPhaseInterceptor.html" title="class in org.apache.cxf.phase">AbstractPhaseInterceptor&lt;T extends Message&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides a starting point implementation for a interceptors that 
+ participate in phased message processing.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/phase/package-summary.html">org.apache.cxf.phase</A> that return types with arguments of type <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/ListIterator.html?is-external=true" title="class or interface in java.util">ListIterator</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>PhaseInterceptorChain.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html#getIterator()">getIterator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>PhaseInterceptorChain.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html#iterator()">iterator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/phase/package-summary.html">org.apache.cxf.phase</A> with parameters of type <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PhaseInterceptorChain.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html#add(org.apache.cxf.interceptor.Interceptor)">add</A></B>(<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PhaseInterceptorChain.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html#add(org.apache.cxf.interceptor.Interceptor, boolean)">add</A></B>(<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&nbsp;i,
+    boolean&nbsp;force)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PhaseInterceptorChain.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html#remove(org.apache.cxf.interceptor.Interceptor)">remove</A></B>(<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Method parameters in <A HREF="../../../../../org/apache/cxf/phase/package-summary.html">org.apache.cxf.phase</A> with type arguments of type <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PhaseInterceptorChain.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html#add(java.util.Collection)">add</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;newhandlers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PhaseInterceptorChain.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html#add(java.util.Collection, boolean)">add</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;newhandlers,
+    boolean&nbsp;force)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase">PhaseInterceptorChain</A></CODE></FONT></TD>
+<TD><CODE><B>PhaseChainCache.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseChainCache.html#get(java.util.SortedSet, java.util.List)">get</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</A>&lt;<A HREF="../../../../../org/apache/cxf/phase/Phase.html" title="class in org.apache.cxf.phase">Phase</A>&gt;&nbsp;phaseList,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p1)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase">PhaseInterceptorChain</A></CODE></FONT></TD>
+<TD><CODE><B>PhaseChainCache.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseChainCache.html#get(java.util.SortedSet, java.util.List, java.util.List)">get</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</A>&lt;<A HREF="../../../../../org/apache/cxf/phase/Phase.html" title="class in org.apache.cxf.phase">Phase</A>&gt;&nbsp;phaseList,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p1,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase">PhaseInterceptorChain</A></CODE></FONT></TD>
+<TD><CODE><B>PhaseChainCache.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseChainCache.html#get(java.util.SortedSet, java.util.List, java.util.List)">get</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</A>&lt;<A HREF="../../../../../org/apache/cxf/phase/Phase.html" title="class in org.apache.cxf.phase">Phase</A>&gt;&nbsp;phaseList,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p1,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase">PhaseInterceptorChain</A></CODE></FONT></TD>
+<TD><CODE><B>PhaseChainCache.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseChainCache.html#get(java.util.SortedSet, java.util.List, java.util.List, java.util.List)">get</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</A>&lt;<A HREF="../../../../../org/apache/cxf/phase/Phase.html" title="class in org.apache.cxf.phase">Phase</A>&gt;&nbsp;phaseList,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p1,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p2,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p3)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase">PhaseInterceptorChain</A></CODE></FONT></TD>
+<TD><CODE><B>PhaseChainCache.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseChainCache.html#get(java.util.SortedSet, java.util.List, java.util.List, java.util.List)">get</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</A>&lt;<A HREF="../../../../../org/apache/cxf/phase/Phase.html" title="class in org.apache.cxf.phase">Phase</A>&gt;&nbsp;phaseList,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p1,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p2,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p3)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase">PhaseInterceptorChain</A></CODE></FONT></TD>
+<TD><CODE><B>PhaseChainCache.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseChainCache.html#get(java.util.SortedSet, java.util.List, java.util.List, java.util.List)">get</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</A>&lt;<A HREF="../../../../../org/apache/cxf/phase/Phase.html" title="class in org.apache.cxf.phase">Phase</A>&gt;&nbsp;phaseList,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p1,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p2,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p3)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase">PhaseInterceptorChain</A></CODE></FONT></TD>
+<TD><CODE><B>PhaseChainCache.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseChainCache.html#get(java.util.SortedSet, java.util.List, java.util.List, java.util.List, java.util.List)">get</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</A>&lt;<A HREF="../../../../../org/apache/cxf/phase/Phase.html" title="class in org.apache.cxf.phase">Phase</A>&gt;&nbsp;phaseList,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p1,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p2,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p3,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p4)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase">PhaseInterceptorChain</A></CODE></FONT></TD>
+<TD><CODE><B>PhaseChainCache.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseChainCache.html#get(java.util.SortedSet, java.util.List, java.util.List, java.util.List, java.util.List)">get</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</A>&lt;<A HREF="../../../../../org/apache/cxf/phase/Phase.html" title="class in org.apache.cxf.phase">Phase</A>&gt;&nbsp;phaseList,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p1,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p2,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p3,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p4)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase">PhaseInterceptorChain</A></CODE></FONT></TD>
+<TD><CODE><B>PhaseChainCache.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseChainCache.html#get(java.util.SortedSet, java.util.List, java.util.List, java.util.List, java.util.List)">get</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</A>&lt;<A HREF="../../../../../org/apache/cxf/phase/Phase.html" title="class in org.apache.cxf.phase">Phase</A>&gt;&nbsp;phaseList,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p1,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p2,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p3,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p4)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase">PhaseInterceptorChain</A></CODE></FONT></TD>
+<TD><CODE><B>PhaseChainCache.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseChainCache.html#get(java.util.SortedSet, java.util.List, java.util.List, java.util.List, java.util.List)">get</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</A>&lt;<A HREF="../../../../../org/apache/cxf/phase/Phase.html" title="class in org.apache.cxf.phase">Phase</A>&gt;&nbsp;phaseList,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p1,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p2,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p3,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p4)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase">PhaseInterceptorChain</A></CODE></FONT></TD>
+<TD><CODE><B>PhaseChainCache.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseChainCache.html#get(java.util.SortedSet, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List)">get</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</A>&lt;<A HREF="../../../../../org/apache/cxf/phase/Phase.html" title="class in org.apache.cxf.phase">Phase</A>&gt;&nbsp;phaseList,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p1,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p2,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p3,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p4,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p5)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase">PhaseInterceptorChain</A></CODE></FONT></TD>
+<TD><CODE><B>PhaseChainCache.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseChainCache.html#get(java.util.SortedSet, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List)">get</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</A>&lt;<A HREF="../../../../../org/apache/cxf/phase/Phase.html" title="class in org.apache.cxf.phase">Phase</A>&gt;&nbsp;phaseList,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p1,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p2,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p3,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p4,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p5)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase">PhaseInterceptorChain</A></CODE></FONT></TD>
+<TD><CODE><B>PhaseChainCache.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseChainCache.html#get(java.util.SortedSet, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List)">get</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</A>&lt;<A HREF="../../../../../org/apache/cxf/phase/Phase.html" title="class in org.apache.cxf.phase">Phase</A>&gt;&nbsp;phaseList,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p1,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p2,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p3,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p4,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p5)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase">PhaseInterceptorChain</A></CODE></FONT></TD>
+<TD><CODE><B>PhaseChainCache.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseChainCache.html#get(java.util.SortedSet, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List)">get</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</A>&lt;<A HREF="../../../../../org/apache/cxf/phase/Phase.html" title="class in org.apache.cxf.phase">Phase</A>&gt;&nbsp;phaseList,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p1,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p2,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p3,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p4,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p5)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase">PhaseInterceptorChain</A></CODE></FONT></TD>
+<TD><CODE><B>PhaseChainCache.</B><B><A HREF="../../../../../org/apache/cxf/phase/PhaseChainCache.html#get(java.util.SortedSet, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List)">get</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/SortedSet.html?is-external=true" title="class or interface in java.util">SortedSet</A>&lt;<A HREF="../../../../../org/apache/cxf/phase/Phase.html" title="class in org.apache.cxf.phase">Phase</A>&gt;&nbsp;phaseList,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p1,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p2,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p3,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p4,
+    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;&nbsp;p5)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.staxutils.validation"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A> in <A HREF="../../../../../org/apache/cxf/staxutils/validation/package-summary.html">org.apache.cxf.staxutils.validation</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/cxf/staxutils/validation/package-summary.html">org.apache.cxf.staxutils.validation</A> that implement <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/staxutils/validation/StaxSchemaValidationInInterceptor.html" title="class in org.apache.cxf.staxutils.validation">StaxSchemaValidationInInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/staxutils/validation/StaxSchemaValidationOutInterceptor.html" title="class in org.apache.cxf.staxutils.validation">StaxSchemaValidationOutInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.transport"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A> in <A HREF="../../../../../org/apache/cxf/transport/package-summary.html">org.apache.cxf.transport</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Fields in <A HREF="../../../../../org/apache/cxf/transport/package-summary.html">org.apache.cxf.transport</A> with type parameters of type <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>MultipleEndpointObserver.</B><B><A HREF="../../../../../org/apache/cxf/transport/MultipleEndpointObserver.html#bindingInterceptors">bindingInterceptors</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>MultipleEndpointObserver.</B><B><A HREF="../../../../../org/apache/cxf/transport/MultipleEndpointObserver.html#routingInterceptors">routingInterceptors</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/transport/package-summary.html">org.apache.cxf.transport</A> that return types with arguments of type <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>MultipleEndpointObserver.</B><B><A HREF="../../../../../org/apache/cxf/transport/MultipleEndpointObserver.html#getBindingInterceptors()">getBindingInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;? extends <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>MultipleEndpointObserver.</B><B><A HREF="../../../../../org/apache/cxf/transport/MultipleEndpointObserver.html#getRoutingInterceptors()">getRoutingInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.transport.common.gzip"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A> in <A HREF="../../../../../org/apache/cxf/transport/common/gzip/package-summary.html">org.apache.cxf.transport.common.gzip</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/cxf/transport/common/gzip/package-summary.html">org.apache.cxf.transport.common.gzip</A> that implement <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/common/gzip/GZIPInInterceptor.html" title="class in org.apache.cxf.transport.common.gzip">GZIPInInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CXF interceptor that uncompresses those incoming messages that have "gzip"
+ content-encoding.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/common/gzip/GZIPOutInterceptor.html" title="class in org.apache.cxf.transport.common.gzip">GZIPOutInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CXF interceptor that compresses outgoing messages using gzip and sets the
+ HTTP Content-Encoding header appropriately.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.validation"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A> in <A HREF="../../../../../org/apache/cxf/validation/package-summary.html">org.apache.cxf.validation</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/cxf/validation/package-summary.html">org.apache.cxf.validation</A> that implement <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/validation/AbstractValidationInterceptor.html" title="class in org.apache.cxf.validation">AbstractValidationInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/validation/BeanValidationInInterceptor.html" title="class in org.apache.cxf.validation">BeanValidationInInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/validation/BeanValidationOutInterceptor.html" title="class in org.apache.cxf.validation">BeanValidationOutInterceptor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.addressing"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A> in <A HREF="../../../../../org/apache/cxf/ws/addressing/package-summary.html">org.apache.cxf.ws.addressing</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../org/apache/cxf/ws/addressing/package-summary.html">org.apache.cxf.ws.addressing</A> that implement <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/ws/addressing/MAPAggregator.html" title="class in org.apache.cxf.ws.addressing">MAPAggregator</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logical Handler responsible for aggregating the Message Addressing 
+ Properties for outgoing messages.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/interceptor//class-useInterceptor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Interceptor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>
